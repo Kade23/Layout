@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 12px;
+  margin: 2rem;
+  overflow: hidden;
+}
+
+.box1{
+  background-color: hsl(31, 77%, 52%);
+}
+
+.box2{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.box3{
+  background-color: hsl(179, 100%, 13%);
+}
+
+
+.box{
+  padding: 40px;
+  
+}
+.box h2{
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-size: 30px;
+  font-family: 'Big Shoulders Display', cursive;
+
+}
+
+.box p{
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.box a{
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 13px 27px;
+  border-radius: 26px;
+  margin-top: 60px;
+  display: inline-block;
+  font-family: 'Lexend Deca', sans-serif;
+  border: 2px solid hsl(0, 0%, 95%);
+  transition: all .4s ease-in-out;
+}
+
+.box1 a{
+  color: hsl(31, 77%, 52%);
+}
+
+.box2 a{
+  color: hsl(184, 100%, 22%);
+}
+
+.box3 a{
+  color: hsl(179, 100%, 13%);
+}
+
+.box1 a:hover{
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+}
+
+.box2 a:hover{
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
+
+.box3 a:hover{
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+}
+
+.box4 a {
+  color : #454587;
+}
+
+.box4 a:hover{
+  color: hsl(0, 0%, 95%);
+  background-color: #454587;
+}
+
+@media only screen and (max-width: 768px) {
+  .card{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .card{
+    margin: .5rem;
+  }
+}

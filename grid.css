@@ -1,0 +1,76 @@
+
+body {
+  background-color: #F2D1D1;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    'a a b'
+    'c d d'
+    'c e e'
+    ;
+  gap: 0.7em;
+  width: 50%;
+  margin: auto;
+}
+
+main div {
+  padding: 2em;
+  text-align: center;
+}
+
+.area-one {
+  background-color: #e84d15;
+  grid-area: a;
+  width: 23em;
+  height: 11.8em;
+}
+
+.area-two {
+  background-color: #e89b15;
+  grid-area: b;
+  width: 12.3em;
+  height: 11.8em;
+}
+
+.area-three {
+   background-color: #298c2f;
+  grid-area: c;
+  width: 16.6em;
+  height: 13.9em;
+}
+
+.area-four {
+   background-color: #40a7de;
+    grid-area: d;
+    width: 18.9em;
+    height: 2em;
+    
+  }
+
+.area-five {
+   background-color: #40a7de;
+    grid-area: e;
+    width:18.9em;
+    height: 7.1em;
+}
+.box a{
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 13px 27px;
+  border-radius: 26px;
+  margin-top: 60px;
+  display: inline-block;
+  font-family: 'Lexend Deca', sans-serif;
+  border: 2px solid hsl(0, 0%, 95%);
+  transition: all .4s ease-in-out;
+}
+
+.box a:hover{
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
